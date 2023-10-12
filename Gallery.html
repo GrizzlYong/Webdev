@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Gallery.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="navbar">
+
+        <body>
+            <header>
+                <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank"><img
+                        src="img/Black & White Minimalist Business Logo.png" alt="LOGO" class="port_logo"></a>
+                <ul class="menu_bar">
+                    <li><a href="Portfolio.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Album.html">ALBUM</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </header>
+    </section>
+    <section id="Galleries">
+        <div class="gallery-wrap">
+            <i class="fa-solid fa-angles-left fa-2xl" id="backBtn"></i>
+            <div class="gallery">
+                <div>
+                    <span>
+                        <img src="img/Filipino Quest Book.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <img src="img/Filipino Quest Book.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                    </span>
+                </div>
+            
+        </div>
+        <i class="fa-solid fa-angles-right fa-2xl" id="NextBtn"></i>
+
+        </div>
+    </section>
+
+    <section class="my-gallery">
+        <div class="container">
+            <h3 id="tagname" align="center">My <span class="tagnameColor">Gallery</span</h3>
+            <div class="container-container">
+                <div class="container-box">
+                    <div class="dream">
+                        <img src="img/Filipino Quest Book.png">
+                        <img src="img/bata.jpg">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                        
+                    </div>
+                    <div class="dream">
+                        <img src="img/Filipino Quest Book.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                    </div>
+                    <div class="dream">
+                        <img src="img/Filipino Quest Book.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                        <img src="img/Bicol_University.png">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="justify-content-center">
+                <nav>
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                </nav>
+            </div> -->
+        </div>
+    </section>
+    
+</body>
+<script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById(".backBtn");
+    let NextBtn = document.getElementById(".NextBtn");
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+</script>
+</html>
